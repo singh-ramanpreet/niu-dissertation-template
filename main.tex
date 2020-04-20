@@ -23,7 +23,7 @@
 }
 \makeatletter
 \AtBeginDocument{%
-  \newcommand{\thMakeUppercase}{\uppercase}
+  \let\thMakeUppercase\uppercase%
 }
 \makeatother
 
