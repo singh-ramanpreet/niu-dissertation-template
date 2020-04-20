@@ -7,13 +7,25 @@
 \usepackage{rotating}           % defines sidways table and figure env.
 \usepackage{hyperref}		% to insert hyperrefs
 \hypersetup{
-  bookmarksnumbered,
-  bookmarksopen,
-  bookmarksopenlevel=1,
-  colorlinks=false,
-  pdfborder={0 0 0},
-  plainpages=true
+  bookmarksnumbered,%
+  bookmarksopen,%
+  bookmarksopenlevel=1,%
+  colorlinks=false,%
+  pdfborder={0 0 0},%
+  plainpages=true,%
+  pdfencoding=auto,%
+  psdextra,%
+  linktoc=all,%
+  pdfauthor={},%
+  pdftitle={},%
+  pdfsubject={},%
+  pdfkeywords={your topics}%
 }
+\makeatletter
+\AtBeginDocument{%
+  \newcommand{\thMakeUppercase}{\uppercase}
+}
+\makeatother
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Some LaTeX macros
